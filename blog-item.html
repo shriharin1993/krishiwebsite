@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Blog</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/pe-icons.css" rel="stylesheet">
+    <link href="css/prettyPhoto.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <script src="js/jquery.js"></script>
+    <link rel="shortcut icon" href="images/krishi-logo.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/images/ico/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57x57.png">
+    <style type="text/css">
+    @media only screen and (min-device-width : 360px) and 
+    (max-device-width : 640px) {
+    .logo {
+        margin: -33px -71px !important;
+     }
+    }
+    @media only screen and (min-device-width : 320px) and 
+    (max-device-width : 568px) {
+    .logo {
+        margin: -33px -71px !important;
+     }
+    }
+    @media only screen and (min-device-width : 375px) and 
+    (max-device-width : 667px)  {
+      .logo {
+        margin: -33px -71px !important;
+     }  
+    }
+    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    .logo {
+        margin: -33px -71px !important;
+     } 
+    }
+    </style>
+    <script type="text/javascript">
+    jQuery(document).ready(function($){
+    'use strict';
+        jQuery('body').backstretch([
+            "images/bg/AG2.jpg",
+        ], {duration: 5000, fade: 500});
+
+        $("#mapwrapper").gMap({ controls: false,
+            scrollwheel: false,
+            markers: [{
+                latitude:40.7566,
+                longitude: -73.9863,
+            icon: { image: "images/marker.png",
+                iconsize: [44,44],
+                iconanchor: [12,46],
+                infowindowanchor: [12, 0] } }],
+            icon: {
+                image: "images/marker.png",
+                iconsize: [26, 46],
+                iconanchor: [12, 46],
+                infowindowanchor: [12, 0] },
+            latitude:40.7566,
+            longitude: -73.9863,
+            zoom: 14 });
+    });
+    </script>
+</head><!--/head-->
+<body>
+<div id="preloader"></div>
+    <header class="navbar navbar-inverse navbar-fixed-top opaqued" role="banner">
+    <div id="search-wrapper">
+        <div class="container">
+            <input id="search-box" placeholder="Search">
+        </div>
+    </div>
+    </div>
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/krishi-logo.png" class="logo" alt="Krishi Group" style="width: 200px;margin: -33px -100px;"></a>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.html">Home</a></li>
+                    <!-- <li><a href="#">About Us</a></li>
+                    <li><a href="#">Expertise</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li> -->
+                </ul>
+            </div>
+        </div>
+    </header><!--/header-->
+
+    <section id="single-page-slider" class="no-margin">
+        <div class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="item active">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="center gap fade-down section-heading">
+                                    <h2 class="main-title">Getting Started with MurMur</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--/.item-->
+            </div><!--/.carousel-inner-->
+        </div><!--/.carousel-->
+    </section><!--/#main-slider-->
+
+    <div id="content-wrapper">
+        <section id="blog" class="white">
+            <div class="container">
+            <div class="gap"></div>
+                <div class="row">
+                    <aside class="col-sm-4 col-sm-push-8">
+
+                        <div class="widget categories">
+                            <h3 class="widget-title">Blog Categories</h3>
+                            <div class="row">
+                                <div class="col-md-8 col-sm-6">
+                                    <ul class="arrow">
+                                        <li><a href="#">Alternative Agriculture</a></li>
+                                        <li><a href="#">Real Estate and Land Banking</a></li>
+                                        <li><a href="#">Renewable Energy</a></li>
+                                        <li><a href="#">Next Generation Solutions</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4 col-sm-6">
+                                </div>
+                            </div>
+                        </div><!--/.categories-->
+                        <!-- <div class="widget tags">
+                            <h3 class="widget-title">Post Tags</h3>
+                            <ul class="tag-cloud">
+                                <li><a class="btn btn-xs btn-primary btn-outlined" href="#">Fashion</a></li>
+                                <li><a class="btn btn-xs btn-primary btn-outlined" href="#">Video</a></li>
+                                <li><a class="btn btn-xs btn-primary btn-outlined" href="#">WordPress</a></li>
+                                <li><a class="btn btn-xs btn-primary btn-outlined" href="#">Plugins</a></li>
+                                <li><a class="btn btn-xs btn-primary btn-outlined" href="#">Downloads</a></li>
+                                <li><a class="btn btn-xs btn-primary btn-outlined" href="#">Freebies</a></li>
+                                <li><a class="btn btn-xs btn-primary btn-outlined" href="#">Envato</a></li>
+                                <li><a class="btn btn-xs btn-primary btn-outlined" href="#">Tutorial</a></li>
+                                <li><a class="btn btn-xs btn-primary btn-outlined" href="#">Update</a></li>
+                            </ul>
+                        </div> --><!--/.tags-->
+
+                    </aside>
+                    <div class="col-sm-8 col-sm-pull-4">
+                        <div class="blog">
+                            <div class="blog-item">
+                                <div class="blog-featured-image">
+                                    <img class="img-responsive img-blog" src="images/blog/murmur.jpg" alt="" />
+                                </div>
+                                <div class="blog-content">
+                                    <h3 class="main-title">Getting Started with MurMur</h3>
+                                    <hr>
+                                   <!--  <div class="entry-meta">
+                                        <span><i class="fa fa-user"></i> <a href="#"> Danny Jones</a></span>
+                                        <span><i class="fa fa-folder"></i> <a href="#"> Style</a></span>
+                                        <span><i class="fa fa-clock-o"></i> April 5th, 2014</span>
+                                        <span><i class="fa fa-comment"></i> <a href="blog-item.html#comments"><span class="counter">14</span> Comments</a></span>
+                                    </div> -->
+                                    <p>Murmur is a new age, decentralized social media platform, dedicated to microblogging. And it is built on the EOS blockchain.</p>
+
+                                    <h3>Our reason for existence</h3>
+                                    <hr>
+                                    <p>Murmur envisions a future where power belongs to the people and they are empowered in all the right ways to control their personal digital experiences, especially on social media platforms.
+                                    </p>
+
+                                    <p>On the face of it, Murmur is an effort at making social experiences free from the outsized influence of platforms and algorithms. At a deeper level, Murmur aims to combat the problems faced by people using conventional social media platforms such as selective censorship, the spread of falsified information and the commercial exploitation of user attention and personal data. Simply put, we are dedicated to creating a safer, fairer and more rewarding space for social interactions online.</p>
+                            <br>
+                        <h3>What can you do on MurMur</h3>
+                        <p>On Murmur, you will be able to perform the following basic actions
+<ul>
+<li><strong>Murmur</strong> : broadcast a short, 256 character text message to all their followers, with the option of attached images.</li>
+<li><strong>Whisper</strong> : send a private message to another user, protected by public-key encryption</li>
+<li><strong>Snoop</strong> : express appreciation for a murmur, by clicking a button which increases in count with every such user action.</li>
+<li><strong>Yell</strong> : broadcast an existing murmur to all their followers, with an optional comment.</li></ul></p>
+<br>
+<h3>Getting started: How to create an EOS account and why this is essential</h3>                
+                        <p>Murmur exists on the EOS blockchain and all publishing happens directly on the immutable ledger of the blockchain. Learn more about EOS here.</p>
+
+                        <p>To use Murmur, then, a user first has to create an account with the EOS blockchain. This account then continues to be their Murmur account and can be used, among other things, to transact different tokens on the blockchain network, and to take part in broader EOS ecosystem.</p>
+
+                            <!-- <ul class="pagination pagination-lg">
+                                <li><a href="#"><i class="fa fa-angle-left"></i></a></li>
+                                <li><a href="blog-item.html">1</a></li>
+                                <li><a href="blog-item1.html">2</a></li>
+                                <li><a href="blog-item2.html">3</a></li>
+                                <li><a href="#"><i class="fa fa-angle-right"></i></a></li>
+                            </ul> --><!--/.pagination-->
+                        </div>
+                    </div><!--/.col-md-8-->
+                </div><!--/.row-->
+            </div>
+        </section><!--/#blog-->
+    </div>
+
+    <div id="footer-wrapper">
+        <section id="bottom" class="">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-sm-6 about-us-widget">
+                        <h4>About Krishi Group</h4>
+                        <p>Krishi Technologies Private Limited has been delivering results since we began operations in 2010. <br/>
+                        Our fundamental ethic rests in systematic, smooth, and sustainable project execution.</p>
+                    </div><!--/.col-md-3-->
+
+                    <!-- <div class="col-md-4 col-sm-6">
+                        <h4>Quick Links</h4>
+                        <div>
+                            <ul class="arrow">
+                                <li><a href="#services">Expertise</a></li>
+                                <li><a href="#blog">Blogs</a></li>
+                                <li><a href="#contactus">Contact us</a></li>
+                            </ul>
+                        </div>
+                    </div> --><!--/.col-md-3-->
+
+                   <!--  <div class="col-md-3 col-sm-6">
+                        <h4>Latest Articles</h4>
+                        <div>
+                            <div class="media">
+                                <div class="pull-left">
+                                    <img class="widget-img" src="images/portfolio/folio01.jpg" alt="">
+                                </div>
+                                <div class="media-body">
+                                    <span class="media-heading"><a href="#">Blog Post A</a></span>
+                                    <small class="muted">Posted 14 April 2014</small>
+                                </div>
+                            </div>
+                            <div class="media">
+                                <div class="pull-left">
+                                    <img class="widget-img" src="images/portfolio/folio02.jpg" alt="">
+                                </div>
+                                <div class="media-body">
+                                    <span class="media-heading"><a href="#">Blog Post B</a></span>
+                                    <small class="muted">Posted 14 April 2014</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div> --><!--/.col-md-3-->
+
+                    <div class="col-md-4 col-sm-6">
+                        <h4>Come See Us</h4>
+                        <address>
+                            No.40/1A, 3rd Floor,<br/> Basappa Complex, Lavelle Road <br/>Bengaluru <br/> KA 560001 IN <br/>
+                        </address>
+                    </div> <!--/.col-md-3-->
+                </div>
+            </div>
+        </section><!--/#bottom-->
+
+        <footer id="footer" class="">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8">
+                        &copy; 2019 Krishi Group. All Rights Reserved.
+                    </div>
+                    <div class="col-sm-4">
+                        <ul class="pull-right">
+                            <li><a id="gototop" class="gototop" href="#"><i class="fa fa-chevron-up"></i></a></li><!--#gototop-->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer><!--/#footer-->
+    </div>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/init.js"></script>
+</body>
+</html>

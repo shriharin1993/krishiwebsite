@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Solar</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/pe-icons.css" rel="stylesheet">
+    <link href="css/prettyPhoto.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <script src="js/jquery.js"></script>
+    <link rel="shortcut icon" href="images/krishi-logo.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/images/ico/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57x57.png">
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBKiWrjQ0j7PiQnkdZptZiVWH2aJp83rng">
+    </script>
+    <style type="text/css">
+    .table>thead>tr>th {
+        border-bottom: 2px solid #323232 !important;
+    }
+    @media only screen and (min-device-width : 360px) and 
+    (max-device-width : 640px) {
+    .logo {
+        margin: -33px -71px !important;
+     }
+    }
+    @media only screen and (min-device-width : 320px) and 
+    (max-device-width : 568px) {
+    .logo {
+        margin: -33px -71px !important;
+     }
+    }
+    @media only screen and (min-device-width : 375px) and 
+    (max-device-width : 667px)  {
+      .logo {
+        margin: -33px -71px !important;
+     }  
+    }
+    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    .logo {
+        margin: -33px -71px !important;
+     } 
+    }
+    </style>
+    <script type="text/javascript">
+    jQuery(document).ready(function($){
+    'use strict';
+        jQuery('body').backstretch([
+            "images/bg/SE1.jpg",
+        ], {duration: 5000, fade: 500});
+
+        $("#mapwrapper").gMap({ controls: false,
+            scrollwheel: false,
+            markers: [{
+                latitude:40.7566,
+                longitude: -73.9863,
+            icon: { image: "images/marker.png",
+                iconsize: [44,44],
+                iconanchor: [12,46],
+                infowindowanchor: [12, 0] } }],
+            icon: {
+                image: "images/marker.png",
+                iconsize: [26, 46],
+                iconanchor: [12, 46],
+                infowindowanchor: [12, 0] },
+            latitude:40.7566,
+            longitude: -73.9863,
+            zoom: 14 });
+    });
+    </script>
+</head><!--/head-->
+<body>
+<div id="preloader"></div>
+<header class="navbar navbar-inverse navbar-fixed-top opaqued" role="banner">
+    <div id="search-wrapper">
+        <div class="container">
+            <input id="search-box" placeholder="Search">
+        </div>
+    </div>
+    </div>
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <i class="fa fa-bars"></i>
+                </button>
+                 <a class="navbar-brand" href="index.html">
+                <img src="images/krishi-logo.png" class="logo" alt="Krishi Group" style="width: 200px;margin: -33px -100px;">
+                 </a> 
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.html">Home</a></li>
+                    <!-- <li><a href="#">About Us</a></li>
+                    <li><a href="#">Expertise</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li> -->
+                </ul>
+            </div>
+        </div>
+    </header><!--/header-->
+
+    <section id="single-page-slider" class="no-margin">
+        <div class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="item active">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                            <div class="center gap fade-down section-heading">
+                                    <h2 class="main-title">Solar</h2>
+                                    <hr>
+                                    <p>Going green now includes sun too! Electricity being vital in mostly all operations that are automated, obtaining it from a natural resource is the best eco-friendly and feasible way for a win-win.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--/.item-->
+            </div><!--/.carousel-inner-->
+        </div><!--/.carousel-->
+    </section><!--/#main-slider-->
+
+    <div id="content-wrapper">
+        <section id="about-us" class="white">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 fade-up">
+                        <h1 style="text-align: center;">Metrics From Our Solar Plants</h1>
+                        <hr>
+                        <select class="form-control" name="solar" id="solar" style="width: 50%;">
+                          <option value="1">Pawar Public School Bhandup 60.48kWp</option>
+                          <option value="2">Pawar Public School Dombivli 49.92kWp</option>
+                          <option value="3">Pawar Public School Hadapsar 97.92kWp</option>
+                          <option value="4">Pawar Public School Hinjewadi 124.8kWp</option>
+                          <option value="5">Pawar Public School Kandivali 36.48kWp</option>
+                          <option value="6">Pawar Public School Nanded 52.16kWp</option>
+                          <option value="7">Pawar Public School,Chandivali 27.2kWp</option>
+                          <option value="8">Summary</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4 fade-up">
+
+                    </div>
+                </div><br/>
+
+        <section id="stats" class="divider-section" style="padding-top: 13px !important;padding-bottom: 0px !important;">
+            <div class="container-fluid">
+                <div class="table-responsive">
+                   <table id="example" class="table" style="width:100%;text-align: center;">
+                    <thead>
+                        <tr>
+                            <th style="text-align: center;">Today Energy</th>
+                            <th style="text-align: center;">Monthly energy</th>
+                            <th style="text-align: center;">Total Energy</th>
+                            <th style="text-align: center;">Wattage</th>
+                            <th style="text-align: center;">CO2 Saved</th>
+                            <th style="text-align: center;">Diesel Saved</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="Bhandup">
+                            <td style="font-size: 25px;font-weight: bold;">
+                            <i class="fa fa-bolt" aria-hidden="true" style="font-size: 20px"></i>&nbsp;0.00 kWh</td>
+                            <td style="font-size: 25px;font-weight: bold;">
+                            <i class="fa fa-bolt" aria-hidden="true" style="font-size: 20px"></i>&nbsp;0.00 kWh</td>
+                            <td style="font-size: 25px;font-weight: bold;">
+                            <i class="fa fa-bolt" aria-hidden="true" style="font-size: 20px"></i>&nbsp;24.24 MWh</td>
+                            <td style="font-size: 25px;font-weight: bold;">
+                            <i class="fa fa-lightbulb-o" aria-hidden="true" style="font-size: 20px"></i>&nbsp;---</td>
+                            <td style="font-size: 25px;font-weight: bold;">
+                            <i class="fa fa-leaf" aria-hidden="true" style="font-size: 20px"></i>&nbsp;19.39 Ton</td>
+                            <td style="font-size: 25px;font-weight: bold;">
+                            <i class="fa fa-tint" aria-hidden="true" style="font-size: 20px"></i>&nbsp;2.42 kL</td>
+                        </tr>
+                        <tr class="Dombivli" style="display: none;">
+                            <td style="font-size: 25px;font-weight: bold;">
+                            <i class="fa fa-bolt" aria-hidden="true" style="font-size: 20px"></i>&nbsp;54.76 kWh</td>
+                            <td style="font-size: 25px;font-weight: bold;">
+                            <i class="fa fa-bolt" aria-hidden="true" style="font-size: 20px"></i>&nbsp;1.75 MWh</td>
+                            <td style="font-size: 25px;font-weight: bold;">
+                            <i class="fa fa-bolt" aria-hidden="true" style="font-size: 20px"></i>&nbsp;81.21 MWh</td>
+                            <td style="font-size: 25px;font-weight: bold;">
+                            <i class="fa fa-lightbulb-o" aria-hidden="true" style="font-size: 20px"></i>&nbsp;24.87 kW</td>
+                            <td style="font-size: 25px;font-weight: bold;">
+                            <i class="fa fa-leaf" aria-hidden="true" style="font-size: 20px"></i>&nbsp;64.97 Ton</td>
+                            <td style="font-size: 25px;font-weight: bold;">
+                            <i class="fa fa-tint" aria-hidden="true" style="font-size: 20px"></i>&nbsp;8.12 kL</td>
+                        </tr>
+                        <tr class="Hadapsar" style="display: none;">
+                            <td style="font-size: 25px;font-weight: bold;">
+                            <i class="fa fa-bolt" aria-hidden="true" style="font-size: 20px"></i>&nbsp;125.88 kWh</td>
+                            <td style="font-size: 25px;font-weight: bold;">
+                            <i class="fa fa-bolt" aria-hidden="true" style="font-size: 20px"></i>&nbsp;4.46 MWh</td>
+                            <td style="font-size: 25px;font-weight: bold;">
+                            <i class="fa fa-bolt" aria-hidden="true" style="font-size: 20px"></i>&nbsp;170.93 MWh</td>
+                            <td style="font-size: 25px;font-weight: bold;">
+                            <i class="fa fa-lightbulb-o" aria-hidden="true" style="font-size: 20px"></i>&nbsp;64.83 kW</td>
+                            <td style="font-size: 25px;font-weight: bold;">
+                            <i class="fa fa-leaf" aria-hidden="true" style="font-size: 20px"></i>&nbsp;136.74 Ton</td>
+                            <td style="font-size: 25px;font-weight: bold;">
+                            <i class="fa fa-tint" aria-hidden="true" style="font-size: 20px"></i>&nbsp;17.09 kL</td>
+                        </tr>
+                        <tr class="Hinjewadi" style="display: none;">
+                            <td style="font-size: 25px;font-weight: bold;">
+                            <i class="fa fa-bolt" aria-hidden="true" style="font-size: 20px"></i>&nbsp;0.00 kWh</td>
+                            <td style="font-size: 25px;font-weight: bold;">
+                            <i class="fa fa-bolt" aria-hidden="true" style="font-size: 20px"></i>&nbsp;4.00 MWh</td>
+                            <td style="font-size: 25px;font-weight: bold;">
+                            <i class="fa fa-bolt" aria-hidden="true" style="font-size: 20px"></i>&nbsp;118.85 MWh</td>
+                            <td style="font-size: 25px;font-weight: bold;">
+                            <i class="fa fa-lightbulb-o" aria-hidden="true" style="font-size: 20px"></i>&nbsp;---</td>
+                            <td style="font-size: 25px;font-weight: bold;">
+                            <i class="fa fa-leaf" aria-hidden="true" style="font-size: 20px"></i>&nbsp;95.08 Ton</td>
+                            <td style="font-size: 25px;font-weight: bold;">
+                            <i class="fa fa-tint" aria-hidden="true" style="font-size: 20px"></i>&nbsp;11.89 kL</td>
+                        </tr>
+                        <tr class="Kandivali" style="display: none;">
+                            <td style="font-size: 25px;font-weight: bold;">
+                            <i class="fa fa-bolt" aria-hidden="true" style="font-size: 20px"></i>&nbsp;4.11 kWh</td>
+                            <td style="font-size: 25px;font-weight: bold;">
+                            <i class="fa fa-bolt" aria-hidden="true" style="font-size: 20px"></i>&nbsp;515.46 MWh</td>
+                            <td style="font-size: 25px;font-weight: bold;">
+                            <i class="fa fa-bolt" aria-hidden="true" style="font-size: 20px"></i>&nbsp;59.30 MWh</td>
+                            <td style="font-size: 25px;font-weight: bold;">
+                            <i class="fa fa-lightbulb-o" aria-hidden="true" style="font-size: 20px"></i>&nbsp;--
+                           </td>
+                            <td style="font-size: 25px;font-weight: bold;">
+                            <i class="fa fa-leaf" aria-hidden="true" style="font-size: 20px"></i>&nbsp;47.44 Ton</td>
+                            <td style="font-size: 25px;font-weight: bold;">
+                            <i class="fa fa-tint" aria-hidden="true" style="font-size: 20px"></i>&nbsp;5.93 kL</td>
+                        </tr>
+                        <tr class="Nanded" style="display: none;">
+                            <td style="font-size: 25px;font-weight: bold;">
+                            <i class="fa fa-bolt" aria-hidden="true" style="font-size: 20px"></i>&nbsp;93.25 kWh</td>
+                            <td style="font-size: 25px;font-weight: bold;">
+                            <i class="fa fa-bolt" aria-hidden="true" style="font-size: 20px"></i>&nbsp;2.42 MWh</td>
+                            <td style="font-size: 25px;font-weight: bold;">
+                            <i class="fa fa-bolt" aria-hidden="true" style="font-size: 20px"></i>&nbsp;84.34 MWh</td>
+                            <td style="font-size: 25px;font-weight: bold;">
+                            <i class="fa fa-lightbulb-o" aria-hidden="true" style="font-size: 20px"></i>&nbsp;44.64 kW</td>
+                            <td style="font-size: 25px;font-weight: bold;">
+                            <i class="fa fa-leaf" aria-hidden="true" style="font-size: 20px"></i>&nbsp;67.47 Ton</td>
+                            <td style="font-size: 25px;font-weight: bold;">
+                            <i class="fa fa-tint" aria-hidden="true" style="font-size: 20px"></i>&nbsp;8.43 kL</td>
+                        </tr>
+                        <tr class="Chandivali" style="display: none;">
+                            <td style="font-size: 25px;font-weight: bold;">
+                            <i class="fa fa-bolt" aria-hidden="true" style="font-size: 20px"></i>&nbsp;0.00 kWh</td>
+                            <td style="font-size: 25px;font-weight: bold;">
+                            <i class="fa fa-bolt" aria-hidden="true" style="font-size: 20px"></i>&nbsp;0.00 kWh</td>
+                            <td style="font-size: 25px;font-weight: bold;">
+                            <i class="fa fa-bolt" aria-hidden="true" style="font-size: 20px"></i>&nbsp;76.55 MWh</td>
+                            <td style="font-size: 25px;font-weight: bold;">
+                            <i class="fa fa-lightbulb-o" aria-hidden="true" style="font-size: 20px"></i>&nbsp;---</td>
+                            <td style="font-size: 25px;font-weight: bold;">
+                            <i class="fa fa-leaf" aria-hidden="true" style="font-size: 20px"></i>&nbsp;61.24 Ton</td>
+                            <td style="font-size: 25px;font-weight: bold;">
+                            <i class="fa fa-tint" aria-hidden="true" style="font-size: 20px"></i>&nbsp;7.66 kL</td>
+                        </tr>
+                        <tr class="Summary" style="display: none;">
+                            <td style="font-size: 25px;font-weight: bold;">
+                            <i class="fa fa-bolt" aria-hidden="true" style="font-size: 20px"></i>&nbsp;278 kWh</td>
+                            <td style="font-size: 25px;font-weight: bold;">
+                            <i class="fa fa-bolt" aria-hidden="true" style="font-size: 20px"></i>&nbsp;528.09 kWh</td>
+                            <td style="font-size: 25px;font-weight: bold;">
+                            <i class="fa fa-bolt" aria-hidden="true" style="font-size: 20px"></i>&nbsp;615.42 MWh</td>
+                            <td style="font-size: 25px;font-weight: bold;">
+                            <i class="fa fa-lightbulb-o" aria-hidden="true" style="font-size: 20px"></i>&nbsp;134.34 kW
+                           </td>
+                            <td style="font-size: 25px;font-weight: bold;">
+                            <i class="fa fa-leaf" aria-hidden="true" style="font-size: 20px"></i>&nbsp;492.33 Ton</td>
+                            <td style="font-size: 25px;font-weight: bold;">
+                            <i class="fa fa-tint" aria-hidden="true" style="font-size: 20px"></i>&nbsp;61.54 kL</td>
+                        </tr>
+                        </tbody>
+                      </table>
+                      </div>
+            </div>
+        </section><br/>
+
+        <div class="row">
+            <h3>Krishi Sunpower</h3>
+            <hr>
+            <br/>
+            <p>Going green now includes sun too! Electricity being vital in mostly all operations that are automated, obtaining it from a natural resource is the best eco-friendly and feasible way for a win-win.</p>
+
+            <p>Solar panels are installed in the fields for this purpose. They absorb sunlight and give back electricity in need. What more of a smart way can you think of for energy conservation and utilization? </p>
+
+            <p>The photovoltaic module is employed to make conservation effective and utilization powerful. Go green, go solar!</p><br/>
+
+            <h4>Resources</h4>
+            <hr>
+            <p>
+            <ul>
+            <li>Vast landbank in Maharashtra</li> 
+            <li>Cohesive relationships with key partners across the value chain</li> 
+            <li>Landbanks in Karnataka.</li>
+            <li>20MW Solar Capacity in State of Maharashtra, Solapur
+            <ul>
+            <li>Land acquisition completed</li>
+            <li>1st  10MW Evacuation & Transmission Permissions completed</li>
+            <li>2nd 10MW Evacuation & Transmission Permissions underway</li>
+            </ul>
+            </li>
+            <li>Private PPAs under Solar Park or IPP category</li>
+            </ul>
+            </p>
+        </div>
+
+
+        <div class="row">
+            <h3>Already Commissioned / Underway</h3>
+            <hr>
+          <div class="col-md-12">
+            <!-- <div id="map" style="height: 400px; width: 100%;">
+            </div> -->
+            <h4>Pawar Public Schools (7 locations)</h4>
+          <ul>
+              <li>Maharashtra</li>
+              <li>25 years</li>
+              <li>449kWp</li>
+              <li>Land: Roof Top</li>
+              <li>Management Support: Millenia Management (KTPL sister co)</li>
+          </ul>
+          </div>
+       </div>
+          <br/>
+        <div class="row">
+          <div class="col-md-6">
+          <h4>Pawar Public School Bhandup</h4>
+          <div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=Pawar%20Public%20School%20Bhandup&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.pureblack.de"></a></div><style>.mapouter{position:relative;text-align:right;height:400px;width:100%;}.gmap_canvas {overflow:hidden;background:none!important;height:400px;width:100%;}</style></div>
+          </div>
+          <div class="col-md-6" >
+          <h4>Pawar Public School Dombivili</h4>
+          <div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=Pawar%20Public%20School%20Dombivili&t=&z=11&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div><style>.mapouter{position:relative;text-align:right;height:400px;width:100%;}.gmap_canvas {overflow:hidden;background:none!important;height:400px;width:100%;}</style></div>
+          </div>
+       </div>
+      <br/>
+      <div class="row">
+          <div class="col-md-6">
+          <h4>Pawar Public School Hadapsar</h4>
+          <div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=Pawar%20Public%20School%20Hadapsar&t=&z=11&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div><style>.mapouter{position:relative;text-align:right;height:400px;width:100%;}.gmap_canvas {overflow:hidden;background:none!important;height:400px;width:100%;}</style></div>
+          </div>
+          <div class="col-md-6" >
+          <h4>Pawar Public School Hinjewadi</h4>
+          <div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=Pawar%20Public%20School%20Hinjewadi&t=&z=11&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div><style>.mapouter{position:relative;text-align:right;height:400px;width:100%;}.gmap_canvas {overflow:hidden;background:none!important;height:400px;width:100%;}</style></div>
+          </div>
+       </div>
+       <br/>
+      <div class="row">
+          <div class="col-md-6">
+          <h4>Pawar Public School Kandivali</h4>
+          <div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=Pawar%20Public%20School%20Kandivali&t=&z=11&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div><style>.mapouter{position:relative;text-align:right;height:400px;width:100%;}.gmap_canvas {overflow:hidden;background:none!important;height:400px;width:100%;}</style></div>
+          </div>
+          <div class="col-md-6" >
+          <h4>Pawar Public School Nanded</h4>
+          <div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=Pawar%20Public%20School%20Nanded&t=&z=11&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div><style>.mapouter{position:relative;text-align:right;height:400px;width:100%;}.gmap_canvas {overflow:hidden;background:none!important;height:400px;width:100%;}</style></div>
+          </div>
+       </div>
+       <br/>
+       <div class="row">
+          <div class="col-md-12">
+          <h4>Pawar Public School Chandivali</h4>
+          <div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=Chandivali&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.pureblack.de"></a></div><style>.mapouter{position:relative;text-align:right;height:400px;width:100%;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:100%;}</style></div>
+          </div>
+       </div>
+       <br/>
+      <div class="row">
+        <div class="col-md-6">
+          <h4>Unitech Automation</h4>
+          <hr>
+          <ul>
+              <li>Maharashtra</li>
+              <li>15 years</li>
+              <li>320kWp</li>
+              <li>Land: Roof Top</li>
+              <li>EPC: 7Parallels</li>
+          </ul>
+          </div>
+          <div class="col-md-6">
+            <h4>Aiyarmalai</h4>
+            <hr>
+              <ul>
+              <li>1.1MW Capacity</li>
+              <li>Land: Acquired</li>
+              <li>Project under construction</li>
+             </ul>
+         </div>
+      </div>
+        </div>
+        </section>
+    </div>
+
+     <div id="footer-wrapper">
+        <section id="bottom" class="">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-sm-6 about-us-widget">
+                        <h4>About Krishi Group</h4>
+                        <p>Krishi Technologies Private Limited has been delivering results since we began operations in 2010. <br/>
+                        Our fundamental ethic rests in systematic, smooth, and sustainable project execution.</p>
+                    </div><!--/.col-md-3-->
+
+                    <!-- <div class="col-md-4 col-sm-6">
+                        <h4>Quick Links</h4>
+                        <div>
+                            <ul class="arrow">
+                                <li><a href="#services">Expertise</a></li>
+                                <li><a href="#blog">Blogs</a></li>
+                                <li><a href="#contactus">Contact us</a></li>
+                            </ul>
+                        </div>
+                    </div> --><!--/.col-md-3-->
+
+                   <!--  <div class="col-md-3 col-sm-6">
+                        <h4>Latest Articles</h4>
+                        <div>
+                            <div class="media">
+                                <div class="pull-left">
+                                    <img class="widget-img" src="images/portfolio/folio01.jpg" alt="">
+                                </div>
+                                <div class="media-body">
+                                    <span class="media-heading"><a href="#">Blog Post A</a></span>
+                                    <small class="muted">Posted 14 April 2014</small>
+                                </div>
+                            </div>
+                            <div class="media">
+                                <div class="pull-left">
+                                    <img class="widget-img" src="images/portfolio/folio02.jpg" alt="">
+                                </div>
+                                <div class="media-body">
+                                    <span class="media-heading"><a href="#">Blog Post B</a></span>
+                                    <small class="muted">Posted 14 April 2014</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div> --><!--/.col-md-3-->
+
+                    <div class="col-md-4 col-sm-6">
+                        <h4>Come See Us</h4>
+                        <address>
+                            No.40/1A, 3rd Floor,<br/> Basappa Complex, Lavelle Road <br/>Bengaluru <br/> KA 560001 IN <br/>
+                        </address>
+                    </div> <!--/.col-md-3-->
+                </div>
+            </div>
+        </section><!--/#bottom-->
+
+        <footer id="footer" class="">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8">
+                        &copy; 2019 Krishi Group. All Rights Reserved.
+                    </div>
+                    <div class="col-sm-4">
+                        <ul class="pull-right">
+                            <li><a id="gototop" class="gototop" href="#"><i class="fa fa-chevron-up"></i></a></li><!--#gototop-->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer><!--/#footer-->
+    </div>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/init.js"></script>
+
+    <script type="text/javascript">
+    $(document).ready(function(){
+    $("#solar").change(function () {
+    var solar = $("#solar").val();
+    switch(solar) {
+    case '1':
+      $(".Bhandup").show();
+      $(".Dombivli").hide();
+      $(".Hadapsar").hide();
+      $(".Hinjewadi").hide();
+      $(".Kandivali").hide();
+      $(".Nanded").hide();
+      $(".Chandivali").hide();
+      $(".Summary").hide();
+      break;
+    case '2':
+      $(".Bhandup").hide();
+      $(".Dombivli").show();
+      $(".Hadapsar").hide();
+      $(".Hinjewadi").hide();
+      $(".Kandivali").hide();
+      $(".Nanded").hide();
+      $(".Chandivali").hide();
+      $(".Summary").hide();
+      break;
+    case '3':
+      $(".Bhandup").hide();
+      $(".Dombivli").hide();
+      $(".Hadapsar").show();
+      $(".Hinjewadi").hide();
+      $(".Kandivali").hide();
+      $(".Nanded").hide();
+      $(".Chandivali").hide();
+      $(".Summary").hide();
+      break;
+    case '4':
+      $(".Bhandup").hide();
+      $(".Dombivli").hide();
+      $(".Hadapsar").hide();
+      $(".Hinjewadi").show();
+      $(".Kandivali").hide();
+      $(".Nanded").hide();
+      $(".Chandivali").hide();
+      $(".Summary").hide();
+      break;
+    case '5':
+      $(".Bhandup").hide();
+      $(".Dombivli").hide();
+      $(".Hadapsar").hide();
+      $(".Hinjewadi").hide();
+      $(".Kandivali").show();
+      $(".Nanded").hide();
+      $(".Chandivali").hide();
+      $(".Summary").hide();
+      break;
+    case '6':
+      $(".Bhandup").hide();
+      $(".Dombivli").hide();
+      $(".Hadapsar").hide();
+      $(".Hinjewadi").hide();
+      $(".Kandivali").hide();
+      $(".Nanded").show();
+      $(".Chandivali").hide();
+      $(".Summary").hide();
+      break;
+    case '7':
+      $(".Bhandup").hide();
+      $(".Dombivli").hide();
+      $(".Hadapsar").hide();
+      $(".Hinjewadi").hide();
+      $(".Kandivali").hide();
+      $(".Nanded").hide();
+      $(".Chandivali").show();
+      $(".Summary").hide();
+      break;
+    case '8':
+      $(".Bhandup").hide();
+      $(".Dombivli").hide();
+      $(".Hadapsar").hide();
+      $(".Hinjewadi").hide();
+      $(".Kandivali").hide();
+      $(".Nanded").hide();
+      $(".Chandivali").hide();
+      $(".Summary").show();
+      break;
+    default:
+      alert('Please select Solar Plants');
+    }
+});
+});
+</script>
+</body>
+</html>
